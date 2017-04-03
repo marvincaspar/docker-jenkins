@@ -2,8 +2,8 @@ FROM jenkins:2.32.3
 
 USER root
 
-RUN apt-get install \
-      apt-transport-https \
+RUN apt-get update \
+      && apt-get install -y apt-transport-https \
       ca-certificates \
       curl \
       software-properties-common
