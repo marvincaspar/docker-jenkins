@@ -8,7 +8,7 @@ RUN apt-get update \
       curl \
       gnupg2 \
       software-properties-common \
-      vim \
+      vim
 
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 RUN apt-key fingerprint 0EBFCD88
