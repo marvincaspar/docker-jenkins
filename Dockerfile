@@ -10,8 +10,7 @@ RUN apt-get update \
       software-properties-common \
       vim
 
-RUN curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-RUN apt-key fingerprint 0EBFCD88
+RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 RUN add-apt-repository \
       "deb [arch=amd64] https://download.docker.com/linux/debian \
       $(lsb_release -cs) \
